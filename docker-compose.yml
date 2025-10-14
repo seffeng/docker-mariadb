@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  mariadb-1:
+    container_name: "mariadb-alias1"
+    image: "seffeng/mariadb"
+    ports:
+      - "3306:3306"
+    networks:
+      network-01:
+        aliases:
+          - mariadb-net1
+    volumes:
+      - "/opt/websrv/data/mariadb:/opt/websrv/data/mariadb"
+      - "/opt/websrv/tmp:/opt/websrv/tmp"
+      - "/opt/websrv/logs/mariadb:/opt/websrv/logs"
+
+networks:
+  network-01:
+    driver: bridge
+    name: network-01
