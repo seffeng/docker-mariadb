@@ -20,7 +20,7 @@ RUN apk add --update --no-cache mariadb mariadb-client &&\
 
 VOLUME ["${BASE_DIR}/tmp", "${BASE_DIR}/data/mariadb", "${BASE_DIR}/logs"]
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 EXPOSE 3306
 
