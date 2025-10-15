@@ -15,6 +15,7 @@ RUN apk add --update --no-cache mariadb mariadb-client &&\
  rm -f /etc/my.cnf &&\
  cp -Rf /tmp/conf/* ${CONFIG_DIR} &&\
  ln -s ${CONFIG_DIR}/my.cnf /etc/my.cnf &&\
+ chmod +x /usr/local/bin/docker-entrypoint.sh &&\
  rm -rf /var/cache/apk/* &&\
  rm -rf /tmp/*
 
