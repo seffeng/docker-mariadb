@@ -2,8 +2,8 @@
 
 ## 版本说明
 
-* [11.4 , 11.4.10](https://github.com/seffeng/docker-mariadb/tree/11.4)
-* [10.11 , 10.11.14 , latest](https://github.com/seffeng/docker-mariadb/tree/10.11)
+* [11.4 , 11.4.12](https://github.com/seffeng/docker-mariadb/tree/11.4)
+* [10.11 , 10.11.18 , latest](https://github.com/seffeng/docker-mariadb/tree/10.11)
 
 ## 常用命令：
 
